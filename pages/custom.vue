@@ -7,6 +7,8 @@
 </template>
 
 <script setup>
+const { sayHello } = useUtils();
+sayHello();
 definePageMeta({
   layout: "custom",
 });
