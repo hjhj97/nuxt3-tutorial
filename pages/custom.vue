@@ -1,5 +1,9 @@
 <template>
-  <div class="Custom">Custom</div>
+  <div class="Custom">
+    Custom
+    <img src="/sample.jpg" alt="" />
+    <IconsBell />
+  </div>
 </template>
 
 <script setup>

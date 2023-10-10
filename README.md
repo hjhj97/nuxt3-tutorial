@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 Tutorial
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Routing
 
-## Setup
+## Components
 
-Make sure to install the dependencies:
+## Layouts
 
-```bash
-# npm
-npm install
+## Assets
 
-# pnpm
-pnpm install
+#### `assets/` Directory
 
-# yarn
-yarn install
+- `vite`, `webpack` 같은 번들러를 통해서 processing 과정을 거친다.
+- processing 과정을 통해서 성능 최적화를 할 수 있다.
+- processing 과정을 통해 파일이름이 변경된다.(직접 접근 방지)
+- `~/assets/` 경로를 통해서 접근할 수 있다.
 
-# bun
-bun install
-```
+#### `public/` Directory
 
-## Development Server
+- processing 을 거치지 않기 때문에 원본 파일 그대로 유지된다.
+- 정적 파일로 서빙된다. (직접 접근 가능)
+- `/` 경로를 통해서 접근할 수 있다.
 
-Start the development server on `http://localhost:3000`:
+## Reference
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+https://www.youtube.com/watch?v=ww94Jvi8JJo&t=1210s
