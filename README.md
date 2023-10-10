@@ -21,6 +21,10 @@
 - 정적 파일로 서빙된다. (직접 접근 가능)
 - `/` 경로를 통해서 접근할 수 있다.
 
+## Plugins
+
+`NuxtApp` 인스턴스에 함수를 추가할 수 있음
+
 ## Reference
 
 https://www.youtube.com/watch?v=ww94Jvi8JJo&t=1210s

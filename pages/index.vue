@@ -4,6 +4,8 @@
 
 <script setup>
 const { sayHello } = useUtils();
+const { $hello } = useNuxtApp();
+$hello("!!");
 sayHello();
 </script>
 
