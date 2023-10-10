@@ -3,10 +3,13 @@
 </template>
 
 <script setup>
-const { sayHello } = useUtils();
-const { $hello } = useNuxtApp();
-$hello("!!");
-sayHello();
+//const { sayHello } = useUtils();
+//const { $hello } = useNuxtApp();
+//$hello("!!");
+//sayHello();
+definePageMeta({
+  middleware: "hello",
+});
 </script>
 
 <style scoped></style>
