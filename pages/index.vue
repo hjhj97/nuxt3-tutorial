@@ -16,7 +16,10 @@ import { useCounterStore } from "~/stores/myStore";
 //  middleware: "hello",
 //});
 //const counterStore = useCounterStore();
-const counter = useCounter();
+//const counter = useCounter();
+
+const res = await $fetch("/api/hello");
+console.log(res);
 </script>
 
 <style scoped></style>
