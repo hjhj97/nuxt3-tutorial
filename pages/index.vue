@@ -1,5 +1,8 @@
 <template>
-  <div>This is Home</div>
+  <div>
+    This is Home
+    <Alert />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
