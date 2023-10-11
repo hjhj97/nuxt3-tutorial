@@ -1,8 +1,9 @@
 <template>
   <div>
     This is Home
-    <span>{{ counter }}</span>
-    <Counter />
+    <div>{{ pending ? "pending..." : product }}</div>
+
+    <!--<Counter />-->
   </div>
 </template>
 
@@ -13,13 +14,15 @@ import { useCounterStore } from "~/stores/myStore";
 //$hello("!!");
 //sayHello();
 //definePageMeta({
-//  middleware: "hello",
+//  middleware: "hello",v
 //});
 //const counterStore = useCounterStore();
 //const counter = useCounter();
 
-const res = await $fetch("/api/hello");
-console.log(res);
+const { data: product, pending } = await useLazyFetch("/api/product", {
+  transform: (_product) => _product.data,
+});
+console.log(product);
 </script>
 
 <style scoped></style>
