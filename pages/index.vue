@@ -7,8 +7,16 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useCounterStore } from "~/stores/myStore";
+useHead({
+  title: "My App",
+  meta: [{ name: "description", content: "My amazing site." }],
+  bodyAttrs: {
+    class: "test",
+  },
+  script: [{ innerHTML: "console.log('Hello world')" }],
+});
 //const { sayHello } = useUtils();
 //const { $hello } = useNuxtApp();
 //$hello("!!");
